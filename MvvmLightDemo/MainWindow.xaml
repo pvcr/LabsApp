@@ -1,0 +1,51 @@
+﻿<Window x:Class="Labs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:local="clr-namespace:Labs.Views.Footer"
+        xmlns:local1="clr-namespace:Labs.Views.MainPage"        
+        mc:Ignorable="d ignore"
+        Height="300"
+        Width="300"
+        Title="MVVM Light Application"
+        DataContext="{Binding Main, Source={StaticResource Locator}}" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid x:Name="layoutRoot" Background="#1E2120" >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"  />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20"  />
+        </Grid.RowDefinitions>
+        <!--header-->
+        <!--<TextBlock Grid.Row="0" 
+                   FontSize="8"
+                   FontWeight="Bold"
+                   Foreground="#EEEEEE"                   
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="Row 1"/>-->
+        <!--body-->
+        <local1:MainPage Grid.Row="1"  />
+        <!--footer-->
+        <local:Footer Margin="5" Grid.Row="2" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Center" VerticalContentAlignment="Center" />
+        
+        
+        
+        
+        
+     
+
+    </Grid>
+</Window>

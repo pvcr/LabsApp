@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="Labs.Views.Nav.NavTop"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Labs.Views.Nav"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100">
+    <Grid x:Name="layoutNavTopRoot" >
+       
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"  />
+                <RowDefinition Height="0.1*"  />
+                <RowDefinition Height="0.1*"  />
+                <RowDefinition Height="0.1*"  />
+                <RowDefinition Height="0.1*"  />
+                <RowDefinition Height="0.05*"  />
+        </Grid.RowDefinitions>
+
+   
+        <Image Grid.Row="0" Source="/images/person.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Border BorderBrush="#3D3C3A" BorderThickness="1,1,1,1" Margin="0,0,0,0" Grid.Row="1">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#004BA9" Offset="0.0" />
+                    <GradientStop Color="#004BA9" Offset="0.5" />
+                    <GradientStop Color="#004BA9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock  
+                   Text="My View" 
+                   FontSize="8"
+                   FontWeight="Bold"
+                   Foreground="#EEEEEE"                   
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+        </Border>
+        <Border BorderBrush="#3D3C3A" BorderThickness="1,1,1,1" Margin="0,0,0,0" Grid.Row="2">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#D17E1F" Offset="0.0" />
+                    <GradientStop Color="#D17E1F" Offset="0.5" />
+                    <GradientStop Color="#D17E1F" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock  
+                   Text="Team View" 
+                   FontSize="8"
+                   FontWeight="Bold"
+                   Foreground="#EEEEEE" 
+                   Background="#D17E1F"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+        </Border>
+
+        <Border BorderBrush="#3D3C3A" BorderThickness="1,1,1,1" Margin="0,0,0,0" Grid.Row="3">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#004BA9" Offset="0.0" />
+                    <GradientStop Color="#004BA9" Offset="0.5" />
+                    <GradientStop Color="#004BA9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock Grid.Row="3" 
+                   Text="Control Tower" 
+                   FontSize="8"
+                   FontWeight="Bold"
+                   Foreground="#EEEEEE"                   
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+        </Border>
+        <Border BorderBrush="#3D3C3A" BorderThickness="1,1,1,1" Margin="0,0,0,0" Grid.Row="4">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#004BA9" Offset="0.0" />
+                    <GradientStop Color="#004BA9" Offset="0.5" />
+                    <GradientStop Color="#004BA9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock Grid.Row="4" 
+                   Text="Morew" 
+                   FontSize="8"
+                   FontWeight="Bold"
+                   Foreground="#EEEEEE"                   
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+        </Border>
+        <TextBlock Grid.Row="5" Margin="0,0,0,0"
+                   Text="Comments" 
+                   FontSize="8"
+                   FontWeight="Bold"
+                   Foreground="#EEEEEE"                   
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+
+
+
+      
+        </Grid>
+
+  
+</UserControl>

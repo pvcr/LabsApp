@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Labs.Views.WorkTopPage.WorkTopPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Labs.Views.WorkTopPage"
+              xmlns:local1="clr-namespace:Labs.Views.Setup"
+             xmlns:local2="clr-namespace:Labs.Views.Testing"
+             xmlns:local3="clr-namespace:Labs.Views.Writeup"
+             xmlns:local4="clr-namespace:Labs.Views.Exceptions"
+             xmlns:local5="clr-namespace:Labs.Views.Nav"
+              mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="layoutWorkTopPageRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"  />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.15*" />
+            <ColumnDefinition Width="0.15*" />            
+            <ColumnDefinition Width="0.25*" />
+            <ColumnDefinition Width="0.25*" />
+            <ColumnDefinition Width="0.2*" />
+        </Grid.ColumnDefinitions>
+        <local1:Setup Grid.Column="0" Margin="0" />
+        <local2:Testing Grid.Column="1" Margin="0" />
+        <local3:Writeup Grid.Column="2" Margin="0" />
+        <local4:Exceptions Grid.Column="3" Margin="0" />
+        <local5:Nav Grid.Column="4" Margin="0" />
+        
+        <!--<local1:Sample Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <local2:Instrument Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <local1:Sample Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />-->
+
+    </Grid>
+</UserControl>
